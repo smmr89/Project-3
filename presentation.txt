@@ -1,0 +1,31 @@
+PROJECT 3
+[PETER]
+    INTRODUCTION
+	STORY
+	DATA SOURCES
+---------------------------------------------
+[HABIB]
+    JUPYTER NOTEBOOK
+	DATA IMPORT
+	CLEAN
+---------------------------------------------
+[MUSHFIQ]
+	GROUPBY/FILTER
+	TRANSFORM TO SQLITE
+    HTML/JS/CSS/JSON
+	FILE STRUCTURE
+    FLASK APP
+	READ SQLITE/EXPORTING TO JSON FORMAT
+	ROUTES
+---------------------------------------------
+[GWEN]
+    DEMONSTRATE APP
+	HOMEPAGE
+	CRIME MAP/PIE CHART
+	HEAT MAP
+---------------------------------------------
+[PETER]
+    CONCLUSION/FURTHER WORK
+---------------------------------------------
+[ALL]
+    QUESTIONS AND ANSWERS

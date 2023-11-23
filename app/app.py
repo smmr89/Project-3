@@ -40,49 +40,6 @@ print("\n================================\n")
 def home():
     print("\n[0]============= /Welcome to home page =============\n")
 
-    ###No Longer using this data###    
-    # Base = automap_base()
-    # Base.prepare(autoload_with=engine)
-
-    # session = Session(bind=engine)
-    # execute_string = "select * from crime_IMD"
-    # results = engine.connect().execute(text(execute_string)).fetchall()
-    # session.close()
-    # geojson = {
-    #     "type": "FeatureCollection",
-    #     "features": [
-    #         {
-    #             "type": "Feature",
-    #             "geometry": {
-    #                 "type": "Point",
-    #                 "coordinates": [Longitude, Latitude],
-    #             },
-    #             "properties": {
-    #                 "crime_id": str(crime_id),
-    #                 "LSOA_code": str(LSOA_code),
-    #                 "LSOA_name": str(LSOA_name),
-    #                 "LA_District_code": str(LA_District_code),
-    #                 "LA_District_name": str(LA_District_name),
-    #                 "Month": str(Month),
-    #                 "crime_type": str(crime_type),
-    #                 "IMD_Score": IMD_Score,
-    #                 "IMD_Decile": IMD_Decile,
-    #                 "Income_Score": Income_Score,
-    #                 "Total_population": Total_population
-    #             },
-    #         } for crime_id, LSOA_code, LSOA_name, LA_District_code, LA_District_name, Month, crime_type, Longitude, Latitude, IMD_Score, IMD_Decile,  Income_Score, Total_population in results]
-    # }
-
-    # output_file_path = "static/js/json/crime_imd_merge.geojson"
-
-    # # Export GeoJSON to a file
-    # if os.path.exists(output_file_path):
-    #     print(f"Exporting {output_file_path} has previously been performed")
-    # else:
-    #     # Export GeoJSON to a file
-    #     with open(output_file_path, "w") as output_file:
-    #         json.dump(geojson, output_file, indent=2)
-    #     print(f"GeoJSON data has been exported to {output_file_path}")
     ###########################################################################################
     ###########################################################################################
     output_file_path = "static/js/json/month_lsoa_gb.geojson"
@@ -217,3 +174,54 @@ def crime_heat():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
+
+
+
+    ###No Longer using this data###    
+    # Base = automap_base()
+    # Base.prepare(autoload_with=engine)
+
+    # session = Session(bind=engine)
+    # execute_string = "select * from crime_IMD"
+    # results = engine.connect().execute(text(execute_string)).fetchall()
+    # session.close()
+    # geojson = {
+    #     "type": "FeatureCollection",
+    #     "features": [
+    #         {
+    #             "type": "Feature",
+    #             "geometry": {
+    #                 "type": "Point",
+    #                 "coordinates": [Longitude, Latitude],
+    #             },
+    #             "properties": {
+    #                 "crime_id": str(crime_id),
+    #                 "LSOA_code": str(LSOA_code),
+    #                 "LSOA_name": str(LSOA_name),
+    #                 "LA_District_code": str(LA_District_code),
+    #                 "LA_District_name": str(LA_District_name),
+    #                 "Month": str(Month),
+    #                 "crime_type": str(crime_type),
+    #                 "IMD_Score": IMD_Score,
+    #                 "IMD_Decile": IMD_Decile,
+    #                 "Income_Score": Income_Score,
+    #                 "Total_population": Total_population
+    #             },
+    #         } for crime_id, LSOA_code, LSOA_name, LA_District_code, LA_District_name, Month, crime_type, Longitude, Latitude, IMD_Score, IMD_Decile,  Income_Score, Total_population in results]
+    # }
+
+    # output_file_path = "static/js/json/crime_imd_merge.geojson"
+
+    # # Export GeoJSON to a file
+    # if os.path.exists(output_file_path):
+    #     print(f"Exporting {output_file_path} has previously been performed")
+    # else:
+    #     # Export GeoJSON to a file
+    #     with open(output_file_path, "w") as output_file:
+    #         json.dump(geojson, output_file, indent=2)
+    #     print(f"GeoJSON data has been exported to {output_file_path}")
