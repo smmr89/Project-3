@@ -1,0 +1,146 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Street Crime in West Midlands</title>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      />
+      <!-- Leaflet CSS -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+      />
+      <!-- Our CSS -->
+      <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+      <style>
+              .jumbotron {
+        background-image: url("static/images/image.jpg");
+        background-size: cover;
+      }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <center><h2>Project 3: Dashboard of <br> Street Crime in West Midlands</h2>
+            <p>Use the links below to navigate</p></center>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Street Crime Map</h3>
+              </div>
+              <div id="id1" class="panel-body">
+                <a href="/crime_markers">
+                  <img class="img-responsive" src="static/images/crime_markers.png" class="img-rounded" id="Panel_Image">
+                  <span>Street Crime Map</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Crime Type Pie Chart</h3>
+              </div>
+              <div id="id2" class="panel-body">
+                <a href="/crime_type">
+                  <img class="img-responsive" src="static/images/pie_chart.png" class="img-rounded" id="Panel_Image">
+                  <span>Street Crime Count by Crime Type</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <div class="col-md-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Street Crime Heat Map</h3>
+              </div>
+              <div id="id3" class="panel-body">
+                <a href="/crime_heat">
+                  <img class="img-responsive" src="static/images/heat_map.png" class="img-rounded" id="Panel_Image">
+                  <span>Street Crime Heat Map</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">GitHub Repo</h3>
+              </div>
+              <div id="id4" class="panel-body">
+                <a href="https://github.com/smmr89/Project3" target="_blank">
+                  <img class="img-responsive" src="static/images/github_logo.png" class="img-rounded" id="Panel_Image">
+                  <span>Project 3 GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Map of LSOA / Local Authorities</h3>
+              </div>
+              <div id="id5" class="panel-body">
+                <div id="map_lsoa"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Data sources</h3>
+              </div>
+              <div id="id6" class="panel-body">
+                <div id="refs">
+                  <ol>
+                    <li>Police Data: https://data.police.uk/data/</li>
+                    <li>Census Data/Geolookups: https://github.com/drkane/geo-lookups/tree/master</li>
+                    <li>IMD Data: https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      </div>
+
+      <!-- Leaflet JS -->
+      <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+      ></script>
+      <!-- D3 JavaScript -->
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <!-- Plotly -->
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!-- Our JavaScript -->
+      <script type="text/javascript" src="static/js/logic_0_lsoa_map.js"></script>
+      <!-- <script src="./static/js/bonus.js"></script> -->
+    </body>
+  
+  </html>

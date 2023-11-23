@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crime Heat</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h1>Crime Count Heat Map</h1>
+          <p>Select month to update visualisations</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Statistics</h3>
+            </div>
+            <div id="month-statistics" class="panel-body"><p>Total Street Crime Count <hr> West Midlands Combined Authority <hr> [MONTH]: [COUNT]</p></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="well">
+            <h5>Select Month:</h5>
+            <select id="monthDropdown">
+              <option value="2023-09">Sep 2023</option>
+              <option value="2023-08">Aug 2023</option>
+              <option value="2023-07">Jul 2023</option>
+              <option value="2023-06">Jun 2023</option>
+              <option value="2023-05">May 2023</option>
+              <option value="2023-04">Apr 2023</option>
+              <option value="2023-03">Mar 2023</option>
+              <option value="2023-02">Feb 2023</option>
+              <option value="2023-01">Jan 2023</option>
+              <option value="2022-12">Dec 2022</option>
+              <option value="2022-11">Nov 2022</option>
+              <option value="2022-10">Oct 2022</option>
+              <!-- <option value="2022-09">Sep 2022</option>
+              <option value="2022-08">Aug 2022</option>
+              <option value="2022-07">Jul 2022</option>
+              <option value="2022-06">Jun 2022</option>
+              <option value="2022-05">May 2022</option>
+              <option value="2022-04">Apr 2022</option>
+              <option value="2022-03">Mar 2022</option>
+              <option value="2022-02">Feb 2022</option>
+              <option value="2022-01">Jan 2022</option>
+              <option value="2021-12">Dec 2021</option>
+              <option value="2021-11">Nov 2021</option>
+              <option value="2021-10">Oct 2021</option>
+              <option value="2021-09">Sep 2021</option>
+              <option value="2021-08">Aug 2021</option>
+              <option value="2021-07">Jul 2021</option>
+              <option value="2021-06">Jun 2021</option>
+              <option value="2021-05">May 2021</option>
+              <option value="2021-04">Apr 2021</option>
+              <option value="2021-03">Mar 2021</option>
+              <option value="2021-02">Feb 2021</option>
+              <option value="2021-01">Jan 2021</option>
+              <option value="2020-12">Dec 2020</option>
+              <option value="2020-11">Nov 2020</option>
+              <option value="2020-10">Oct 2020</option> -->
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" >
+          <div id="map_heat"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="bubble"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="gauge"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic_3_crime_heat.js"></script>
+    <!-- <script src="./static/js/bonus.js"></script> -->
+  </body>
+
+</html>
