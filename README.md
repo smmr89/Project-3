@@ -48,15 +48,6 @@
 
  - Here are a range of views we've developed on our interactive page:
 
-<img alt="crime_markers" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/lsoa.png">
-
-<img alt="crime_markers" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/crime.png">
-
-<img alt="Pie_chart" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/pie.png">
-
-<img alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat.png">
-
-
 | | |
 |:-------------------------:|:-------------------------:|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/lsoa.png">  LSOA Map |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/crime.png"> Crime Markers |
