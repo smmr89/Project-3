@@ -53,7 +53,7 @@
 
 <img width="977" alt="Pie_chart" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/pie_chart.png">
 
-!<img width="617" alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat_map.png">
+<img width="617" alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat_map.png">
 
 
 ## :rocket: <a id="Future-Development-header"></a>**Future Development** :rocket:
