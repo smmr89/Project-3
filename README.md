@@ -57,6 +57,12 @@
 <img alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat.png">
 
 
+| | |
+|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/lsoa.png">  LSOA Map |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/crime.png"> Crime Markers |
+|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/pie.png"> Pie Chart |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat.png">|
+
+
 ## :rocket: <a id="future-development-header"></a>**Future Development** :rocket:
 
  - In the realm of future development, several opportunities lie ahead for enhancing our interactive street crime dashboard. Potential areas of focus include:
