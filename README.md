@@ -14,7 +14,7 @@
 * [Project Outline](#project-header)
 * [Tools used](#reports-header)
 * [Process](#process-header)
-* [Future Development](#Future-Development-header)
+* [Future Development](#future-development-header)
 
 ## <a id="dataset-header"></a>Dataset
 
@@ -56,7 +56,7 @@
 <img width="617" alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat_map.png">
 
 
-## :rocket: <a id="Future-Development-header"></a>**Future Development** :rocket:
+## :rocket: <a id="future-development-header"></a>**Future Development** :rocket:
 
  - In the realm of future development, several opportunities lie ahead for enhancing our interactive street crime dashboard. Potential areas of focus include:
 
