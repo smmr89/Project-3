@@ -9,17 +9,6 @@ fetch(geojsonFilePath)
     console.log(geojsonData);
     createFeatures(geojsonData.features);
 
-    // Example: Accessing features
-    const features = geojsonData.features;
-    features.forEach(feature => {
-      // Accessing properties
-      const properties = feature.properties;
-      // console.log(properties);
-
-      // Accessing geometry
-      const geometry = feature.geometry;
-      // console.log(geometry);
-    });
   })
   .catch(error => console.error('Error loading GeoJSON:', error));
 
@@ -43,7 +32,7 @@ function createFeatures(crimeData) {
       // console.log(feature.properties.mag)
       // Size of circles determined by magntiude
       magScale = feature.properties.crime_count * 0.2;
-      // Color of circles determined by depth
+      // Color of circles determined by IMD
       depthScale = feature.properties.IMD_Decile;
       // console.log(depthScale)
       // return L.circleMarker(latlng, geojsonMarkerOptions);
@@ -96,7 +85,7 @@ function createMap(crime_markers, crimeData) {
   
   // let selectedMonth = "2023-09";
   
-  // Example: Handle dropdown change event
+  // Handle dropdown change event
   var dropdown = document.getElementById("monthDropdown");
 
 

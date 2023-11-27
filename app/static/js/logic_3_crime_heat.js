@@ -53,7 +53,7 @@ function updateHeatMap(month, geojsonData) {
     blur: 35
   }).addTo(myMap);
 
-
+  // get total crime count
   var totalCrimeCount = filteredData.length;
   console.log(totalCrimeCount)
   // Update the content of the statistics box
@@ -62,20 +62,6 @@ function updateHeatMap(month, geojsonData) {
 
   statisticsBox.innerHTML = `<p>Total Street Crime Count <hr>MONTH SELECTED: ${selectedMonth}<hr> CRIME COUNT: ${totalCrimeCount}</p>`;
 }
-
-// function getTotalCrimeCountForMonth(crimeData, targetMonth) {
-//   // Initialize the total count to 0
-//   let totalCrimeCount = 0;
-
-//   // Iterate through each feature in the GeoJSON data
-//   crimeData.forEach(function(feature) {
-//       // Check if the feature corresponds to the target month
-//       if (feature.properties.Month === targetMonth) {
-//           // Add the crime_count to the total
-//           totalCrimeCount += feature.properties.crime_count;
-//       }
-//   });
-// }
 
 const geojson_heat = 'static/js/json/heat_markers.geojson';
 
@@ -86,7 +72,6 @@ fetch(geojson_heat)
     
     console.log(geojsonData);
    
-
 
       // Update pie chart for the initial selected month
       updateHeatMap(selectedMonth, geojsonData);

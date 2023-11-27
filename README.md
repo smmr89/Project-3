@@ -56,12 +56,13 @@
 
 ## :rocket: <a id="future-development-header"></a>**Future Development** :rocket:
 
- - In the realm of future development, several opportunities lie ahead for enhancing our interactive street crime dashboard. Potential areas of focus include:
+ - Potential Further Developments
 
-     1) Feature Expansion: Introduce additional features to provide users with a more comprehensive understanding of street crime patterns.
-     2) Performance Optimization: Explore opportunities to enhance the speed and efficiency of data processing and visualization rendering.
-     3) User Feedback Integration: Act upon user feedback to refine existing features and incorporate new functionalities that align with user preferences.
-     4) Enhanced Data Sources: Consider integrating additional data sources to enrich the depth of analysis and broaden the scope of the dashboard.
+     1) Add multiple filters to view data in more specific forms such as filtering by Crime Type as well as Month and LSOA.
+     2) Use a dynamically created dropwdown generated from available data
+     3) Pull data using webscraping/API techniques
+     4) Normalise data using population count to get crime rates
+     5) Further user interaction such as search bars for crime types and/or locations (e.g. post codes)
 
   ## References/Data Sources
 

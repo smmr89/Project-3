@@ -1,7 +1,5 @@
 
-
 let myMap = L.map("map_lsoa", {
-  // center: [52.489471, -1.898575],
   center: [52.5077863433557, -1.8125147837200926],
   zoom: 11
 });
@@ -10,12 +8,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-// let mapStyle = {
-//   color: "white",
-//   fillColor: "pink",
-//   fillOpacity: 0.5,
-//   weight: 1.5
-// };
 
 function chooseColor(object, value) {
   
@@ -51,7 +43,7 @@ function getKeyByValue(object, value) {
 
 const fetchData = async () => {
   try {
-    // Assuming your local server is running on http://127.0.0.1:8000
+
     const response = await fetch('static/js/json/E47000007.geojson');
     const LSOA_boundaries = await response.json();
 
@@ -61,38 +53,36 @@ const fetchData = async () => {
     
     // console.log(LSOA_boundaries)
     // console.log(districtLSOAs);
-    console.log(districtLSOAs);
-    console.log(typeof districtLSOAs)
-    console.log(districtLSOAs)
+    // console.log(districtLSOAs);
+    // console.log(typeof districtLSOAs)
+    // console.log(districtLSOAs)
 
 
-    console.log(typeof Object.keys(districtLSOAs))
-    console.log(Object.values(districtLSOAs))
-
-
+    // console.log(typeof Object.keys(districtLSOAs))
+    // console.log(Object.values(districtLSOAs))
 
 
     
-    let test = Object.keys(districtLSOAs).map((prop)=> districtLSOAs[prop]);
-    console.log(test)
+    // let test = Object.keys(districtLSOAs).map((prop)=> districtLSOAs[prop]);
+    // console.log(test)
    
 
-    let val = 'E01009524';
+    // let val = 'E01009524';
 
-    let foundKey = null;
+    // let foundKey = null;
 
-    // Iterate through each key in the districtLSOAs object
-    for (const key in districtLSOAs) {
-      if (districtLSOAs.hasOwnProperty(key)) {
-        // Check if the value is present in the array associated with the current key
-        if (districtLSOAs[key].includes(val)) {
-          foundKey = key;
-          break; // Exit the loop once a match is found
-        }
-      }
-    }
+    // // Iterate through each key in the districtLSOAs object
+    // for (const key in districtLSOAs) {
+    //   if (districtLSOAs.hasOwnProperty(key)) {
+    //     // Check if the value is present in the array associated with the current key
+    //     if (districtLSOAs[key].includes(val)) {
+    //       foundKey = key;
+    //       break; // Exit the loop once a match is found
+    //     }
+    //   }
+    // }
 
-console.log('Key for E01009524:', foundKey);
+    // console.log('Key for E01009524:', foundKey);
     L.geoJson(LSOA_boundaries, {
       // Passing in our style object
       style: function(feature) {
@@ -136,8 +126,6 @@ console.log('Key for E01009524:', foundKey);
         //  + "IMD Score: " + "?" + "<br>"
         //  + "Total crime count: " + "?");
       }
-
-
 
     }).addTo(myMap);
     
