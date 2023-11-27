@@ -56,7 +56,7 @@
 !<img width="617" alt="Heat_map" src="https://github.com/smmr89/Project-3/blob/main/app/static/images/heat_map.png">
 
 
-## :development: <a id="Future-Development-header"></a>**Future Development** :development:
+## :rocket: <a id="Future-Development-header"></a>**Future Development** :rocket:
 
  - In the realm of future development, several opportunities lie ahead for enhancing our interactive street crime dashboard. Potential areas of focus include:
 
