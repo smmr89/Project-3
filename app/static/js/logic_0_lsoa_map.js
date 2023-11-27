@@ -141,6 +141,70 @@ console.log('Key for E01009524:', foundKey);
 
     }).addTo(myMap);
     
+    // Define legend
+    let legend = L.control({ position: "topright" });
+    // Colors:
+    let legend_info = {
+      "Birmingham": "yellow",
+      "Solihull": "pink",
+      "Coventry": "red",
+      "Walsall": "blue",
+      "Sandwell": "green",
+      "Wolverhampton": "purple",
+      "Dudley": "orange",
+    };
+
+    // console.log(legend_info)
+    // console.log(Object.keys(legend_info)[0])
+
+    // Add legend
+    legend.onAdd = function () {
+      let div = L.DomUtil.create("div", "legend");
+
+      div.innerHTML = [
+        "<h3>Local Authority</h3>",
+        '<i style="background:' +
+          Object.values(legend_info)[0] +
+          '"></i><b>' +
+          Object.keys(legend_info)[0] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[1] +
+          '"></i><b>' +
+          Object.keys(legend_info)[1] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[2] +
+          '"></i><b>' +
+          Object.keys(legend_info)[2] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[3] +
+          '"></i><b>' +
+          Object.keys(legend_info)[3] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[4] +
+          '"></i><b>' +
+          Object.keys(legend_info)[4] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[5] +
+          '"></i><b>' +
+          Object.keys(legend_info)[5] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[6] +
+          '"></i><b>' +
+          Object.keys(legend_info)[6] +
+          "</b>",
+      ].join("");
+
+      return div;
+    };
+
+    legend.addTo(myMap);
+
     // Process the fetched data as needed
   } catch (error) {
     console.error(error);

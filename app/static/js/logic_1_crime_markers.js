@@ -147,6 +147,75 @@ function createMap(crime_markers, crimeData) {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
+
+  
+    // Define legend
+    let legend = L.control({ position: "bottomleft" });
+    // Colors:
+    let legend_info = {
+      "1-2": "#008000", //GREEN
+      "3-4": "#00FF00", //LIME
+      "5-6": "#FFFF00", //YELLOW
+      "7-8": "#FFA500", //ORANGE
+      "9-10": "#FF0000" // RED
+    };
+
+    // console.log(legend_info)
+    // console.log(Object.keys(legend_info)[0])
+
+    // Add legend
+    legend.onAdd = function () {
+      let div = L.DomUtil.create("div", "legend");
+
+      div.innerHTML = [
+        "<h5>IMD Score (1-10)</h5>",
+        '<i style="background:' +
+          Object.values(legend_info)[0] +
+          '"></i><b>' +
+          Object.keys(legend_info)[0] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[1] +
+          '"></i><b>' +
+          Object.keys(legend_info)[1] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[2] +
+          '"></i><b>' +
+          Object.keys(legend_info)[2] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[3] +
+          '"></i><b>' +
+          Object.keys(legend_info)[3] +
+          "</b><br>",
+        '<i style="background:' +
+          Object.values(legend_info)[4] +
+          '"></i><b>' +
+          Object.keys(legend_info)[4] +
+          "</b><br>",
+        // '<i style="background:' +
+        //   Object.values(legend_info)[5] +
+        //   '"></i><b>' +
+        //   Object.keys(legend_info)[5] +
+        //   "</b><br>",
+        // '<i style="background:' +
+        //   Object.values(legend_info)[6] +
+        //   '"></i><b>' +
+        //   Object.keys(legend_info)[6] +
+        //   "</b>",
+      ].join("");
+
+      return div;
+    };
+
+    legend.addTo(myMap);
+
+
+
+
+
+
 }
 
 

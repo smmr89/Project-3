@@ -41,31 +41,47 @@ document.addEventListener('DOMContentLoaded', function () {
                 labels: labels,
                 datasets: [{
                     data: data,
-                    backgroundColor: getRandomColors(data.length),
+                    backgroundColor: [
+                        '#1f78b4', // Dark Blue
+                        '#33a02c', // Green
+                        '#e31a1c', // Red
+                        '#ff7f00', // Orange
+                        '#6a3d9a', // Purple
+                        '#b15928', // Brown
+                        '#a6cee3', // Light Blue
+                        '#b2df8a', // Light Green
+                        '#fb9a99', // Light Red
+                        '#fdbf6f', // Light Orange
+                        '#cab2d6', // Light Purple
+                        '#ffff99', // Pale Yellow
+                        '#8c510a', // Dark Orange
+                        '#636363'  // Dark Gray
+                      ]
+                    //getRandomColors(data.length),
                 }]
             }
         });
     }
     
 
-    // Function to generate random colors for the pie chart
-    function getRandomColors(numColors) {
-        var colors = [];
-        for (var i = 0; i < numColors; i++) {
-            colors.push(getRandomColor());
-        }
-        return colors;
-    }
+    // // Function to generate random colors for the pie chart
+    // function getRandomColors(numColors) {
+    //     var colors = [];
+    //     for (var i = 0; i < numColors; i++) {
+    //         colors.push(getRandomColor());
+    //     }
+    //     return colors;
+    // }
 
-    // Function to generate a random color
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
+    // // Function to generate a random color
+    // function getRandomColor() {
+    //     var letters = '0123456789ABCDEF';
+    //     var color = '#';
+    //     for (var i = 0; i < 6; i++) {
+    //         color += letters[Math.floor(Math.random() * 16)];
+    //     }
+    //     return color;
+    // }
 
     const json_path = 'static/js/json/crime_type_count.json';
 
